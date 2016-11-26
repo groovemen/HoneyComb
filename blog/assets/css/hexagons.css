@@ -1,0 +1,191 @@
+.hexa-2{
+    margin-left: 23%;
+    margin-top: -75px;
+}
+.hexa-3{
+    margin-left: 47%;
+    margin-top: -75px;
+}
+.hexa-4{
+    margin-left: 23%;
+    margin-top: -75px;
+}
+/*.hexa-1 .hb:first-child():before{*/
+/*	background-color: black;*/
+/*}*/
+/* first hexagon from first row */
+
+
+/* Default Button style
+-------------------------------------------------*/
+.hb {
+	display: inline-block;
+	position:relative;
+	text-align: center; /*  Default text align center */
+	z-index: 0;
+}
+.hb:even{
+	margin-left:50px;
+}
+
+.hb:before,
+.hb:after {
+	position: absolute;
+	content: "";  
+	left: -1px;
+	top: 0;
+	z-index: -1;
+}
+
+.hb:before {
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+.hb:after {
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+/*.hb i {*/
+/*	z-index: 9;*/
+/*	-webkit-transition: all .25s ease;*/
+/*	   -moz-transition: all .25s ease;*/
+/*	    -ms-transition: all .25s ease;*/
+/*	     -o-transition: all .25s ease;*/
+/*	        transition: all .25s ease;*/
+/*}*/
+
+
+/*.hb,*/
+/*.hb:before,*/
+/*.hb:after { */
+/*	 box-sizing: border-box;*/
+
+	 /*default transition time is set .25s = 250 millisecond  */
+	 /*Uncomment following if you want to set transition on hexagon color change */
+
+/*	 -webkit-transition: all 1.25s ease;*/
+/*	   -moz-transition: all 1.25s ease;*/
+/*	    -ms-transition: all 1.25s ease;*/
+/*	     -o-transition: all 1.25s ease;*/
+/*	        transition: all 1.25s ease;*/
+/*}*/
+
+/* Large Button style 
+-------------------------------------------------*/
+
+.hb-lg {
+	line-height: 130px;
+	font-size: 35px;
+	margin: 84px 10px; /* Original output, margin 0 of the button */ 
+	/*margin: 89px 15px;*/ /* New output, margin 15px of the button,  74 + 15 = 89 */  
+}
+.hb-lg ,
+.hb-lg:before,
+.hb-lg:after { 
+	height: 148px;
+	width: 256px; 
+} 
+
+
+/* Default Colors
+-------------------------------------------------*/
+.hb,
+.hb:before,
+.hb:after {
+	background-color: #F6A809;    
+	border-left:1px solid #2c3e50;
+	border-right:1px solid #2c3e50;
+	color: white; /* Default font color */
+}
+
+/* hover colors
+-------------------------------------------------*/
+.hb:hover,
+.hb:hover:before,
+.hb:hover:after {
+	background: transparent;  
+	border-left:3px solid #8ee1cd;
+	border-right:3px solid #8ee1cd;  
+	color: #8ee1cd;
+}
+
+.color-1,
+.color-1:before,
+.color-1:after{
+  	background-color: #8ee1cd;
+  	border-left:1px solid #8cdfcb;
+  	border-right:1px solid #8cdfcb;
+  	font-family: "Libre Baskerville";
+  	
+}
+.color-2,
+.color-2:before,
+.color-2:after{
+  	background-color: #785340;
+  	border-left:1px solid #785340;
+  	border-right:1px solid #785340;
+  	font-family: "Libre Baskerville";
+}
+.color-3,
+.color-3:before,
+.color-3:after{
+ 	background-color: transparent;
+  	border-left:3px solid #8cdfcb;
+  	border-right:3px solid #8cdfcb;
+  	color: #787676;
+  	font-family: "Libre Baskerville";
+}
+.color-4,
+.color-4:before,
+.color-4:after{
+ 	background-color: transparent;
+  	border-left:3px solid #f6a809;
+  	border-right:3px solid #f6a809;
+  	color: #787676;
+  	font-family: "Libre Baskerville";
+  	font-style: italic;
+}
+.color-5,
+.color-5:before,
+.color-5:after{
+ 	background-color: #f6a809;
+  	border-left:1px solid #f6a809;
+  	border-right:1px solid #f6a809;
+  	font-family: "Libre Baskerville";
+}
+.color-3:hover,
+.color-3:hover:before,
+.color-3:hover:after {
+	background-color: transparent;
+  	border-left:1px solid #8cdfcb;
+  	border-right:1px solid #8cdfcb;
+}
+.color-4:hover,
+.color-4:hover:before,
+.color-4:hover:after {
+	background-color: transparent;
+  	border-left:1px solid #f6a809;
+  	border-right:1px solid #f6a809;
+}
+.color-5:hover,
+.color-5:hover:before,
+.color-5:hover:after {
+	background-color: transparent;
+  	border-left:3px solid #f6a809;
+  	border-right:3px solid #f6a809;
+}
+.color-2:hover,
+.color-2:hover:before,
+.color-2:hover:after {
+	background-color: transparent;
+  	border-left:3px solid #785340;
+  	border-right:3px solid #785340;
+}
